@@ -77,7 +77,7 @@ onInputChange = (event) => {
 
 onButtonSubmit = () => {
     this.setState({imageURL: this.state.input});
-         fetch('https://tranquil-hamlet-51059.herokuapp.com', {
+         fetch('https://tranquil-hamlet-51059.herokuapp.com/imageurl', {
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
